@@ -221,7 +221,7 @@ void setup() {
   Serial.begin(115200);
   Serial.println("ESP32 Gateway Started dengan NimBLE (JSON)!");
 
-  cleint.setServer(mqtt_server, mqtt_port);
+  client.setServer(mqtt_server, mqtt_port);
   connectWifi();
   connectMQTT();
 
